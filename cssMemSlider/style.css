@@ -11,35 +11,88 @@ body{
     background-color: rgb(48, 48, 48);
 }
 
+input{
+    position:absolute;
+    visibility: hidden;
+}
+
 .wrapper{
     display: flex;
     justify-content: center;
     align-items:center;
     position: relative;
-    width: 100%;
+    width: 85%;
     height: 100vh;
+    margin: 0 auto;
 }
 
 .slider{
     position: relative;
-    max-width: 110vh;
+    max-width: 120vh;
     height: auto;
     overflow: hidden;
-    margin-left: auto;
+
 }
 
 .slider-item{
     display: flex;
     width: 500%;
     height: 100%;
+    margin: 0vh 17vh;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
 }
 
-.slider-item .item{
+.item{
     width: 20%;
+    -webkit-transition: all 0.5s ease ;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
-.slider-item .item img{
+img{
     max-width: 70%;
     height: auto;
 } 
+
+.slider-nav{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin: 0vh 17vh;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+}
+
+.slider-nav-item{
+    width: 2.5vh;
+    height: 2.5vh;
+    border: 0.3vh solid black;
+    border-radius: 2vh;
+    margin: 10px;
+    cursor:pointer;   
+    -webkit-transition: all 0.5s ease ;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.slider-nav-item:hover{
+    background-color: aliceblue;
+}
+
+#item1:checked ~ .s1{
+    margin-left:0px;
+}
+
+#item2:checked ~ .s1{
+    margin-left:-20%;
+}
+
+#item3:checked ~ .s1{
+    margin-left:-40%;
+}
 
