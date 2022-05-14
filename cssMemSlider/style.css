@@ -45,6 +45,15 @@ input{
     display: -webkit-flex;
 }
 
+.word{
+    position: absolute;
+    color: aliceblue;
+    font-size: 3vh;
+    -webkit-transition: all 0.5s ease ;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
 .item{
     width: 20%;
     -webkit-transition: all 0.5s ease ;
@@ -59,9 +68,9 @@ img{
 
 .slider-nav{
     display: flex;
-    justify-content: left;
+    justify-content: center;
     width: 100%;
-    margin: 0vh 17vh;
+    margin: 0vh 30vh;
     display: -o-flex;
     display: -ms-flex;
     display: -moz-flex;
@@ -80,19 +89,25 @@ img{
     transition: all 0.5s ease;
 }
 
-.slider-nav-item:hover{
-    background-color: aliceblue;
+label:hover{
+    background-color:darkcyan
 }
 
-#item1:checked ~ .s1{
-    margin-left:0px;
+label:active{
+    background-color: black;
 }
 
-#item2:checked ~ .s1{
+
+#item1:checked ~ .s1,.w1{
+    margin-left:0%;
+}
+
+#item2:checked ~ .s1, .w1{
     margin-left:-20%;
 }
 
-#item3:checked ~ .s1{
+#item3:checked ~ .s1, .w1{
     margin-left:-40%;
 }
+
 
