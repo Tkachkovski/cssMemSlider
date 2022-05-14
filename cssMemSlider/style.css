@@ -49,6 +49,7 @@ input{
     position: absolute;
     color: aliceblue;
     font-size: 3vh;
+    margin-top: 0.8vh;
     -webkit-transition: all 0.5s ease ;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -70,7 +71,7 @@ img{
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 0vh 30vh;
+    height: 20vh;
     display: -o-flex;
     display: -ms-flex;
     display: -moz-flex;
@@ -82,7 +83,7 @@ img{
     height: 2.5vh;
     border: 0.3vh solid black;
     border-radius: 2vh;
-    margin: 10px;
+    margin: 1.5vh;
     cursor:pointer;   
     -webkit-transition: all 0.5s ease ;
     -o-transition: all 0.5s ease;
@@ -123,7 +124,6 @@ label:active{
     background-color: black;
 }
 
-
 #item1:checked ~ .s1,.w1{
     margin-left:0%;
 }
@@ -136,4 +136,18 @@ label:active{
     margin-left:-40%;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+    .slider-item{
+        margin: 0vh 7vh;
+    }
+
+    .word{
+        font-size: 1.5vh;
+        width: 18%;
+    }
+
+    .slider-nav-item{
+        margin: 0.5vh;
+    }
+}
 
